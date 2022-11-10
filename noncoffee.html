@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Cafe Page</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Dongle&family=Hi+Melody&display=swap" rel="stylesheet">
+        
+        <style>
+
+            div{
+                display: block;
+            }
+
+            body{
+                background-size: 100px;  
+                position: fixed;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                font-family: monospace;
+            }
+
+            .bookcover{
+                background-color:rgb(186, 178, 168);
+                border-radius:9px;
+                border:1px solid darkgrey;
+                width:960px;
+                height: 660px;
+                margin: 100px auto;
+                position: relative;
+            }
+
+            .bookdot{
+                border-radius:9px;
+                border:2px dashed white;
+                padding: 15px;
+                position: absolute;
+                top: 15px;
+                left: 15px;
+                right: 15px;
+                bottom: 15px;
+            }
+
+            .page {    
+                background-color: antiquewhite;
+                border-radius: 9px;
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                right: 10px;
+                bottom: 10px;
+            }
+
+            .container {
+                position: absolute;
+                justify-content: space-around;
+                display: flex;
+            }
+
+
+            /*왼*/ 
+            .left {
+                text-align: center;
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                margin-top: 20px;
+                margin-left: 30px;
+              
+            }
+
+            .today {
+                margin-bottom: 5px;
+                font-size: 15px;
+                text-align: center;
+                font-family: 'Hi Melody', cursive;
+            }
+           
+            .profile {
+                flex-direction: column;
+                background-color:rgb(228, 219, 208);
+                border: 1px solild rgb(85, 84, 84);
+                border-radius: 9px;
+                height: 34rem;
+            }
+
+            .profile_photo {
+                margin-top: 40px;
+            }
+
+            .profile_content {
+                margin: 40px auto;
+                font-size: 13px;
+                color: rgb(85, 84, 84);
+            }
+
+
+            /*중앙*/
+            .middle {
+                flex: 2.8;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                margin-top: 20px;
+                margin-left: 30px;
+                width: 400px;
+            }
+
+            .title {
+                margin-bottom: 5px;
+                font-size: 17px;
+                text-align: center;
+                font-family: 'Hi Melody', cursive;
+            }
+
+            .center {
+                overflow-y: auto;
+                flex-direction: column;
+                background-color:lightyellow;
+                border-radius: 9px;
+                height: 34rem;
+                font-family:'Dongle', sans-serif;
+            }
+
+            .scroll_box {
+                height: 480px;
+                overflow-y: scroll;
+            }
+
+            .content {
+                text-align: center;
+            }
+
+            .content1, .content2, .content3 {
+                border: 1px dotted rosybrown;
+                flex: 0;
+                margin: 15px;
+                border-radius: 5px;
+                text-align: center;
+                line-height: 22px;
+                margin-bottom: 20px;
+                flex-direction: column;
+                padding: 10px;
+            }
+
+            .point {
+                font-weight: bold;
+                text-align: left;
+                margin-top: 10px;
+                margin-left: 18px;
+            }
+            
+            .text {
+                text-align: center;
+                font-size: 11px;
+            }
+            
+            .content3>.text{
+                display: flex;
+                flex-direction: row;
+            }
+
+            p {
+                font-family:'Hi Melody', cursive; 
+                font-size: 12px; 
+                color:rgb(85, 84, 84);
+            }
+
+            .menu-box1 {
+                width:60%
+            }
+
+            .menu-box2 {
+                width:40%
+            }
+
+            /*오*/
+            .right {
+                flex:0.7;
+            }
+
+            .menu_box {
+                margin-top: 35px;
+                flex: 1;
+                height: 100px;
+                margin-right: 10px;
+                background-color: antiquewhite;
+                border: 1px solid antiquewhite;
+                width: 80px; 
+            }
+
+            .menu_box a {
+                display: block;
+                text-decoration: none;
+                text-align: center;
+                align-items: center;
+                border-radius: 0 9px 9px 0;
+                background-color:peachpuff;
+                padding: 10px;
+                margin-top: 6px;
+                width: 80px;
+                color: grey;
+                border: 3px solid whitesmoke;
+                font-family: 'Dancing Script', cursive;
+                font-size: 15px;
+            }
+        </style>
+
+
+            </style>
+
+    </head>
+
+    <body>
+        <div class="bookcover">
+            <div class="bookdot">
+                <div class="page">
+                    <div class="container">
+
+
+                    <div class="left">
+                        <div class="today">
+                            <span>
+                                ☕️주인장의 커피 향기☕️
+                            </span>
+                        </div>
+                      <div class="profile">
+                        <div class="profile_photo">
+                            <img src="images/girl.jpeg" alt="마스코트 소녀" width="75%"
+                            style="border: 2px solid lightgrey;border-radius: 10px;">
+                        </div>
+                        <div class="profile_content">
+                            <br>
+                            <br>
+                            <span style="font-family: serif;">Welcome to my cafe</span>
+                            <br>
+                            <br>
+                            <span style="font-family: serif;">Have a relex time~</span>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            📌
+                            <br>
+                            <span style="font-family: serif;">캐릭터는 주인장이</span>
+                            <br>
+                            <span style="font-family: serif;">직접 그린 마스코트 입니다.</span>
+                            <br>
+                            <br>
+                            <span style="font-family: serif;">-주인장 올림-</span>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class="middle">
+                        <div class="title_box">
+                            <span class="title">
+                                This place will be your pleasant memory..🖤
+                            </span>
+                        </div>
+
+                        <div class="center">
+                            <div class="content_page">
+                                <div class="scroll_box">
+                                    <div class="content">
+                                        <div class="content1">
+                                            <div class="point">
+                                                <span style="font-size: 25px; color:sienna">BEST ADE</span>
+                                            </div>
+                                            <br>
+                                            <div class="text">
+                                                <div class="photo">
+                                                <img src="images/lemonade.jpeg" alt="레몬에이드" width="60%" height="300px" style="border-radius: 9px;">
+                                                </div>
+                                                <p>
+                                                    🍋LEMON ADE🍋
+                                                    <br>
+                                                    남녀노소 누구나 가리지 않는 에이드
+                                                    <br>
+                                                    밥먹고 상큼한 음료 한잔하기에 제격!
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="content2">
+                                            <div class="point">
+                                                <span style="font-size: 25px; color:sienna">BEST LATTE</span>
+                                            </div>
+                                            <br>
+                                            <div class="text">
+                                                <div class="photo">
+                                                    <img src="images/strawberrylatte.jpeg" alt="딸기라떼" width="60%" height="300px" style="border-radius: 9px;">
+                                                <p>
+                                                    🍓딸기 라떼🍓
+                                                    <br>
+                                                    딱 적절한 당도에 
+                                                    <br>
+                                                    딸기 과즙이 씹히는 라떼
+                                                </p>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <div class="content3">
+                                            <div class="point">
+                                                <span style="font-size: 25px; color:sienna">MENU</span>
+                                            </div>
+                                            <br>
+                                            <div class="text">
+                                                <div class="menu-box1">
+                                                <h1 style="color:sienna">에이드</h1>
+                                                <p>
+                                                    레몬에이드
+                                                    <br>
+                                                    자몽에이드
+                                                    <br>
+                                                    오렌지에이드
+                                                    <br>
+                                                    백향과에이드
+                                                    <br>
+                                                    <br>
+                                                </p>
+                                                <h1 style="color:sienna">라떼</h1>
+                                                <p>
+                                                    딸기라떼
+                                                    <br>
+                                                    초코라떼
+                                                    <br>
+                                                    민트초코라떼
+                                                    <br>
+                                                    말차라떼
+                                                </p>
+                                                </div>
+
+                                                <div class="menu-box2">
+                                                <h1 style="color:sienna">💰</h1>
+                                                <p>
+                                                    5000
+                                                    <br>
+                                                    5000
+                                                    <br>
+                                                    5000
+                                                    <br>
+                                                    5000
+                                                    <br>
+                                                    <br>
+                                                </p>
+                                                <h1 style="color:sienna">💰</h1>
+                                                <p>
+                                                    6500
+                                                    <br>
+                                                    5500
+                                                    <br>
+                                                    5500
+                                                    <br>
+                                                    6000
+                                                </p>
+                                                </div>
+                                            </div>
+                                        </div>  
+                                    </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                     <div class="right">
+                        <div class="menu_box">
+                             <a href="main.html">Main</a>
+                             <a href="coffee.html">Coffee</a>
+                             <a href="noncoffee.html">NonCoffee</a> 
+                             <a href="tea.html">Tea</a> 
+                             <a href="dessert.html">Dessert</a> 
+                        </div>
+                     </div>
+                 </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+                        
+                      
+
+    </body>
+</html>
